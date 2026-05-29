@@ -1,0 +1,3 @@
+/Users/sebastiansanchez/cplusplusprojs/FinMathUtils/build/CMakeFiles/FinMathUtils.dir
+/Users/sebastiansanchez/cplusplusprojs/FinMathUtils/build/CMakeFiles/edit_cache.dir
+/Users/sebastiansanchez/cplusplusprojs/FinMathUtils/build/CMakeFiles/rebuild_cache.dir
