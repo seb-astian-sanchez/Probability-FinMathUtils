@@ -1,6 +1,6 @@
-CMakeFiles/FinMathUtils.dir/src/interest.cpp.o: \
-  /Users/sebastiansanchez/cplusplusprojs/FinMathUtils/src/interest.cpp \
-  /Users/sebastiansanchez/cplusplusprojs/FinMathUtils/include/finmath/interest.hpp \
+CMakeFiles/FinMathUtils.dir/src/taylor.cpp.o: \
+  /Users/sebastiansanchez/cplusplusprojs/FinMathUtils/src/taylor.cpp \
+  /Users/sebastiansanchez/cplusplusprojs/FinMathUtils/include/finmath/taylor.hpp \
   /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/cmath \
   /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__config \
   /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__config_site \
@@ -170,4 +170,103 @@ CMakeFiles/FinMathUtils.dir/src/interest.cpp.o: \
   /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__math/modulo.h \
   /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__math/remainder.h \
   /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__math/rounding_functions.h \
-  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__math/trigonometric_functions.h
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__math/trigonometric_functions.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/stdexcept \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__exception/exception.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__fwd/string.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__fwd/memory.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__fwd/memory_resource.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__verbose_abort \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/cstddef \
+  /opt/homebrew/Cellar/llvm/22.1.6/lib/clang/22/include/__stddef_header_macro.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/lib/clang/22/include/__stddef_nullptr_t.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/lib/clang/22/include/__stddef_max_align_t.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/lib/clang/22/include/__stddef_offsetof.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__cstddef/byte.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__fwd/byte.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__cstddef/max_align_t.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__cstddef/ptrdiff_t.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/cstdlib \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/stdlib.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/stdlib.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/_stdlib.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/_bounds.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/wait.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/_types/_pid_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/_types/_id_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/signal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/appleapiopts.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/machine/signal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/arm/signal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/machine/_mcontext.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/arm/_mcontext.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/mach/machine/_structs.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/mach/arm/_structs.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/machine/types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/arm/types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/_types/_u_int8_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/_types/_u_int16_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/_types/_u_int32_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/_types/_u_int64_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/_pthread/_pthread_attr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/_types/_sigaltstack.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/_types/_ucontext.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/_types/_sigset_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/_types/_uid_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/resource.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/_types/_timeval.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/machine/endian.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/arm/endian.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/_endian.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/machine/_endian.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/arm/_endian.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/__endian.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/libkern/_OSByteOrder.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/libkern/arm/_OSByteOrder.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/alloca.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/_types/_ct_rune_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/_types/_rune_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/_mb_cur_max.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/malloc/_malloc.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/malloc/_malloc_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/malloc/_ptrcheck.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/_abort.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/_types/_dev_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/_types/_mode_t.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/exception \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__exception/exception_ptr.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__exception/operations.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__memory/addressof.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__memory/construct_at.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__assert \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__assertion_handler \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__log_hardening_failure \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__verbose_trap \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__new/placement_new_delete.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__utility/move.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__utility/swap.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/typeinfo \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__exception/nested_exception.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__exception/terminate.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/new \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__new/align_val_t.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__new/allocate.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__utility/element_count.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__new/exceptions.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__new/global_new_delete.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__new/nothrow_t.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__new/new_handler.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__new/interference_size.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__new/launder.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__new/destroying_delete_t.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/iosfwd \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__fwd/fstream.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__fwd/ios.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__fwd/istream.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__fwd/ostream.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__fwd/sstream.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__fwd/streambuf.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__std_mbstate_t.h \
+  /opt/homebrew/Cellar/llvm/22.1.6/bin/../include/c++/v1/__mbstate_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/sys/_types/_mbstate_t.h

@@ -10,10 +10,10 @@ add_executable(
     FinMathUtils
     src/main.cpp
     src/interest.cpp
+    src/taylor.cpp
 )
-target_include_directories(
-    FinMathUtils
-    PRIVATE include
+target_include_directories(FinMathUtils PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
 cmake_minimum_required(VERSION 3.20)

@@ -81,12 +81,12 @@ clean: CMakeFiles/FinMathUtils.dir/clean
 CMakeFiles/FinMathUtils.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FinMathUtils.dir/build.make CMakeFiles/FinMathUtils.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FinMathUtils.dir/build.make CMakeFiles/FinMathUtils.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/sebastiansanchez/cplusplusprojs/FinMathUtils/build/CMakeFiles --progress-num=1,2,3 "Built target FinMathUtils"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/sebastiansanchez/cplusplusprojs/FinMathUtils/build/CMakeFiles --progress-num=1,2,3,4 "Built target FinMathUtils"
 .PHONY : CMakeFiles/FinMathUtils.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/FinMathUtils.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sebastiansanchez/cplusplusprojs/FinMathUtils/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sebastiansanchez/cplusplusprojs/FinMathUtils/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/FinMathUtils.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sebastiansanchez/cplusplusprojs/FinMathUtils/build/CMakeFiles 0
 .PHONY : CMakeFiles/FinMathUtils.dir/rule

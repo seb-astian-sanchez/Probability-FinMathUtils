@@ -1,4 +1,4 @@
-#include "interest.hpp"
+#include "finmath/interest.hpp"
 #include <cmath>
 
 double NARtoEAR(double nomRate, int m){

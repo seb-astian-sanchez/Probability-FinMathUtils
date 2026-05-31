@@ -177,6 +177,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FinMathUtils.dir/build.make CMakeFiles/FinMathUtils.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/taylor.o: src/taylor.cpp.o
+.PHONY : src/taylor.o
+
+# target to build an object file
+src/taylor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FinMathUtils.dir/build.make CMakeFiles/FinMathUtils.dir/src/taylor.cpp.o
+.PHONY : src/taylor.cpp.o
+
+src/taylor.i: src/taylor.cpp.i
+.PHONY : src/taylor.i
+
+# target to preprocess a source file
+src/taylor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FinMathUtils.dir/build.make CMakeFiles/FinMathUtils.dir/src/taylor.cpp.i
+.PHONY : src/taylor.cpp.i
+
+src/taylor.s: src/taylor.cpp.s
+.PHONY : src/taylor.s
+
+# target to generate assembly for a file
+src/taylor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FinMathUtils.dir/build.make CMakeFiles/FinMathUtils.dir/src/taylor.cpp.s
+.PHONY : src/taylor.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +216,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/taylor.o"
+	@echo "... src/taylor.i"
+	@echo "... src/taylor.s"
 .PHONY : help
 
 
