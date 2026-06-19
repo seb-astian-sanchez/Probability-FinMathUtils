@@ -7,16 +7,16 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_executable(
-    FinMathUtils
+    Probability-FinMathUtils
     src/main.cpp
     src/interest.cpp
     src/taylor.cpp
 )
-target_include_directories(FinMathUtils PRIVATE
+target_include_directories(Probability-FinMathUtils PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
 cmake_minimum_required(VERSION 3.20)
 
-project(FinMathUtils LANGUAGES CXX)
+project(Probability-FinMathUtils LANGUAGES CXX)
 

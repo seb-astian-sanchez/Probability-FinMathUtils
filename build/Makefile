@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.29.3/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/sebastiansanchez/cplusplusprojs/FinMathUtils
+CMAKE_SOURCE_DIR = /Users/sebastiansanchez/cplusplusprojs/Probability-FinMathUtils
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/sebastiansanchez/cplusplusprojs/FinMathUtils/build
+CMAKE_BINARY_DIR = /Users/sebastiansanchez/cplusplusprojs/Probability-FinMathUtils/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sebastiansanchez/cplusplusprojs/FinMathUtils/build/CMakeFiles /Users/sebastiansanchez/cplusplusprojs/FinMathUtils/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sebastiansanchez/cplusplusprojs/Probability-FinMathUtils/build/CMakeFiles /Users/sebastiansanchez/cplusplusprojs/Probability-FinMathUtils/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sebastiansanchez/cplusplusprojs/FinMathUtils/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sebastiansanchez/cplusplusprojs/Probability-FinMathUtils/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named FinMathUtils
+# Target rules for targets named Probability-FinMathUtils
 
 # Build rule for target.
-FinMathUtils: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FinMathUtils
-.PHONY : FinMathUtils
+Probability-FinMathUtils: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Probability-FinMathUtils
+.PHONY : Probability-FinMathUtils
 
 # fast build rule for target.
-FinMathUtils/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FinMathUtils.dir/build.make CMakeFiles/FinMathUtils.dir/build
-.PHONY : FinMathUtils/fast
+Probability-FinMathUtils/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Probability-FinMathUtils.dir/build.make CMakeFiles/Probability-FinMathUtils.dir/build
+.PHONY : Probability-FinMathUtils/fast
 
 src/interest.o: src/interest.cpp.o
 .PHONY : src/interest.o
 
 # target to build an object file
 src/interest.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FinMathUtils.dir/build.make CMakeFiles/FinMathUtils.dir/src/interest.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Probability-FinMathUtils.dir/build.make CMakeFiles/Probability-FinMathUtils.dir/src/interest.cpp.o
 .PHONY : src/interest.cpp.o
 
 src/interest.i: src/interest.cpp.i
@@ -142,7 +142,7 @@ src/interest.i: src/interest.cpp.i
 
 # target to preprocess a source file
 src/interest.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FinMathUtils.dir/build.make CMakeFiles/FinMathUtils.dir/src/interest.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Probability-FinMathUtils.dir/build.make CMakeFiles/Probability-FinMathUtils.dir/src/interest.cpp.i
 .PHONY : src/interest.cpp.i
 
 src/interest.s: src/interest.cpp.s
@@ -150,7 +150,7 @@ src/interest.s: src/interest.cpp.s
 
 # target to generate assembly for a file
 src/interest.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FinMathUtils.dir/build.make CMakeFiles/FinMathUtils.dir/src/interest.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Probability-FinMathUtils.dir/build.make CMakeFiles/Probability-FinMathUtils.dir/src/interest.cpp.s
 .PHONY : src/interest.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -158,7 +158,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FinMathUtils.dir/build.make CMakeFiles/FinMathUtils.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Probability-FinMathUtils.dir/build.make CMakeFiles/Probability-FinMathUtils.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -166,7 +166,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FinMathUtils.dir/build.make CMakeFiles/FinMathUtils.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Probability-FinMathUtils.dir/build.make CMakeFiles/Probability-FinMathUtils.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -174,7 +174,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FinMathUtils.dir/build.make CMakeFiles/FinMathUtils.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Probability-FinMathUtils.dir/build.make CMakeFiles/Probability-FinMathUtils.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/taylor.o: src/taylor.cpp.o
@@ -182,7 +182,7 @@ src/taylor.o: src/taylor.cpp.o
 
 # target to build an object file
 src/taylor.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FinMathUtils.dir/build.make CMakeFiles/FinMathUtils.dir/src/taylor.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Probability-FinMathUtils.dir/build.make CMakeFiles/Probability-FinMathUtils.dir/src/taylor.cpp.o
 .PHONY : src/taylor.cpp.o
 
 src/taylor.i: src/taylor.cpp.i
@@ -190,7 +190,7 @@ src/taylor.i: src/taylor.cpp.i
 
 # target to preprocess a source file
 src/taylor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FinMathUtils.dir/build.make CMakeFiles/FinMathUtils.dir/src/taylor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Probability-FinMathUtils.dir/build.make CMakeFiles/Probability-FinMathUtils.dir/src/taylor.cpp.i
 .PHONY : src/taylor.cpp.i
 
 src/taylor.s: src/taylor.cpp.s
@@ -198,7 +198,7 @@ src/taylor.s: src/taylor.cpp.s
 
 # target to generate assembly for a file
 src/taylor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FinMathUtils.dir/build.make CMakeFiles/FinMathUtils.dir/src/taylor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Probability-FinMathUtils.dir/build.make CMakeFiles/Probability-FinMathUtils.dir/src/taylor.cpp.s
 .PHONY : src/taylor.cpp.s
 
 # Help Target
@@ -209,7 +209,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... FinMathUtils"
+	@echo "... Probability-FinMathUtils"
 	@echo "... src/interest.o"
 	@echo "... src/interest.i"
 	@echo "... src/interest.s"

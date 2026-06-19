@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/Users/sebastiansanchez/cplusplusprojs/FinMathUtils/CMakeLists.txt"
+  "/Users/sebastiansanchez/cplusplusprojs/Probability-FinMathUtils/CMakeLists.txt"
   "CMakeFiles/3.29.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.29.3/CMakeSystem.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.3/share/cmake/Modules/CMakeCXXInformation.cmake"
@@ -41,5 +41,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/FinMathUtils.dir/DependInfo.cmake"
+  "CMakeFiles/Probability-FinMathUtils.dir/DependInfo.cmake"
   )
