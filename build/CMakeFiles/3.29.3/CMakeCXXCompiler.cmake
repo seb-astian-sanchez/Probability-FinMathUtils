@@ -22,11 +22,11 @@ set(CMAKE_CXX_SIMULATE_VERSION "")
 
 
 
-set(CMAKE_AR "/Library/Developer/CommandLineTools/usr/bin/ar")
+set(CMAKE_AR "/usr/bin/ar")
 set(CMAKE_CXX_COMPILER_AR "/opt/homebrew/Cellar/llvm/22.1.6/bin/llvm-ar")
-set(CMAKE_RANLIB "/Library/Developer/CommandLineTools/usr/bin/ranlib")
+set(CMAKE_RANLIB "/opt/homebrew/opt/llvm/bin/llvm-ranlib")
 set(CMAKE_CXX_COMPILER_RANLIB "/opt/homebrew/Cellar/llvm/22.1.6/bin/llvm-ranlib")
-set(CMAKE_LINKER "/Library/Developer/CommandLineTools/usr/bin/ld")
+set(CMAKE_LINKER "/usr/bin/ld")
 set(CMAKE_LINKER_LINK "")
 set(CMAKE_LINKER_LLD "")
 set(CMAKE_CXX_COMPILER_LINKER "/usr/bin/ld")

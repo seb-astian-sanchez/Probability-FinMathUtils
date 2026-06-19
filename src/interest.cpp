@@ -12,3 +12,9 @@ double EARtoNAR(double effRate, int m){
 double NARnToNARm(double nRate, int n, int m){
     return EARtoNAR(NARtoEAR(nRate, n), m);
 }
+
+//force of interest
+
+//discount conversions 
+
+//more of interface/modularity, for clarity.

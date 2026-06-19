@@ -129,6 +129,30 @@ Probability-FinMathUtils/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Probability-FinMathUtils.dir/build.make CMakeFiles/Probability-FinMathUtils.dir/build
 .PHONY : Probability-FinMathUtils/fast
 
+src/annuities.o: src/annuities.cpp.o
+.PHONY : src/annuities.o
+
+# target to build an object file
+src/annuities.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Probability-FinMathUtils.dir/build.make CMakeFiles/Probability-FinMathUtils.dir/src/annuities.cpp.o
+.PHONY : src/annuities.cpp.o
+
+src/annuities.i: src/annuities.cpp.i
+.PHONY : src/annuities.i
+
+# target to preprocess a source file
+src/annuities.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Probability-FinMathUtils.dir/build.make CMakeFiles/Probability-FinMathUtils.dir/src/annuities.cpp.i
+.PHONY : src/annuities.cpp.i
+
+src/annuities.s: src/annuities.cpp.s
+.PHONY : src/annuities.s
+
+# target to generate assembly for a file
+src/annuities.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Probability-FinMathUtils.dir/build.make CMakeFiles/Probability-FinMathUtils.dir/src/annuities.cpp.s
+.PHONY : src/annuities.cpp.s
+
 src/interest.o: src/interest.cpp.o
 .PHONY : src/interest.o
 
@@ -210,6 +234,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Probability-FinMathUtils"
+	@echo "... src/annuities.o"
+	@echo "... src/annuities.i"
+	@echo "... src/annuities.s"
 	@echo "... src/interest.o"
 	@echo "... src/interest.i"
 	@echo "... src/interest.s"
