@@ -11,6 +11,8 @@ add_executable(Probability-FinMathUtils
     src/interest.cpp
     src/taylor.cpp
     src/annuities.cpp
+    src/prob_event.cpp
+    src/prob_space.cpp
 )
 target_include_directories(Probability-FinMathUtils PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include

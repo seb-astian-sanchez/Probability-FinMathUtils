@@ -4,6 +4,9 @@
 #include "finmath/interest.hpp"
 #include "finmath/taylor.hpp"
 #include "finmath/annuities.hpp"
+#include "prob/prob_space.hpp"
+#include "prob/prob_event.hpp"
+
 
 int main() {
     //std::cout << NARnToNARm(0.10, 4, 2) << '\n';
@@ -33,7 +36,22 @@ int main() {
 
     double PVannuityImmediate = PVannuityImm(payment, effRate, periodCount);
 
-    std:: cout << "Given i = " << effRate << ", the present value of a " << periodCount << " year annuity-immediate with payments of " << payment << " is " << PVannuityImmediate << '\n';
+    std:: cout << "Given i = " << effRate << ", the present value of a " << periodCount << " year annuity-immediate with payments of " << payment << " is " << PVannuityImmediate << '\n' << '\n';
+
+    prob_event eventA("A", 0.1);
+
+    std::cout << "event " << eventA.get_name() << " has a " << eventA.get_prob() << " chance of happening"  << '\n' << '\n' ;
+
+    prob_space spaceS{};
+
+    spaceS.add_event("B", 0.2);
+
+    const auto& sample_space = spaceS.getTest();
+    
+    const auto& test = sample_space.at("B");
+
+    std::cout << "event " << test.get_name() << " has a " << test.get_prob() << " chance of happening"  << '\n' << '\n' ;
+
 
     return 0;
 }
