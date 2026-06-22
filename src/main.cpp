@@ -6,6 +6,8 @@
 #include "finmath/annuities.hpp"
 #include "prob/prob_space.hpp"
 #include "prob/prob_event.hpp"
+#include "prob/atomic_event.hpp"
+
 
 
 int main() {
@@ -28,40 +30,49 @@ int main() {
     //     std::cout<<"error less than threshold" << '\n';
     // }
 
-    double payment = 100.0;
+    // double payment = 100.0;
 
-    double effRate = 0.05;
+    // double effRate = 0.05;
 
-    double periodCount = 10.0;
+    // double periodCount = 10.0;
 
-    double PVannuityImmediate = PVannuityImm(payment, effRate, periodCount);
+    // double PVannuityImmediate = PVannuityImm(payment, effRate, periodCount);
 
-    std:: cout << "Given i = " << effRate << ", the present value of a " << periodCount << " year annuity-immediate with payments of " << payment << " is " << PVannuityImmediate << '\n' << '\n';
+    // std:: cout << "Given i = " << effRate << ", the present value of a " << periodCount << " year annuity-immediate with payments of " << payment << " is " << PVannuityImmediate << '\n' << '\n';
 
+    // prob_event eventA("A", 0.1);
+
+    // std::cout << "event " << eventA.get_name() << " has a " << eventA.get_prob() << " chance of happening"  << '\n' << '\n' ;
+
+    // prob_space spaceS{};
+
+    // spaceS.add_event("B", 0.2);
+
+    // const auto& sample_space = spaceS.getTest();
+    
+    // const auto& test = sample_space.at("B");
+
+    // std::cout << "event " << test.get_name() << " has a " << test.get_prob() << " chance of happening"  << '\n' << '\n' ;
+
+    // eventA.add_intersect("B", 0.2);
+
+    // const auto& intersect_map = eventA.getIntersects();
+
+    // const auto& BcapA = intersect_map.at("B");
+
+    // std::cout << "event B intersect A has a " << BcapA << " chance of happening"  << '\n' << '\n' ;
+        
+    
     prob_event eventA("A", 0.1);
+    atomic_event eventB("B", 0.3);
 
-    std::cout << "event " << eventA.get_name() << " has a " << eventA.get_prob() << " chance of happening"  << '\n' << '\n' ;
+    std::cout << eventA.get_name() << "\n";
+    std::cout << eventB.get_name() << "\n";
+    std::cout << eventA.get_prob() << "\n";
+    std::cout << eventB.get_prob() << "\n";
 
-    prob_space spaceS{};
-
-    spaceS.add_event("B", 0.2);
-
-    const auto& sample_space = spaceS.getTest();
-    
-    const auto& test = sample_space.at("B");
-
-    std::cout << "event " << test.get_name() << " has a " << test.get_prob() << " chance of happening"  << '\n' << '\n' ;
-
-    eventA.add_intersect("B", 0.2);
-
-    const auto& intersect_map = eventA.getIntersects();
-
-    const auto& BcapA = intersect_map.at("B");
-
-    std::cout << "event B intersect A has a " << BcapA << " chance of happening"  << '\n' << '\n' ;
-    
-
-
+    prob_event* ptr = &eventB;
+    std::cout << ptr->get_name() << "\n";
 
     return 0;
 }

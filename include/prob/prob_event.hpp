@@ -14,7 +14,7 @@ class prob_event {
     
     public:
         prob_event(std::string name, double prob_occurs);
-        std::string get_name() const;
+        virtual std::string get_name() const;
         double get_prob() const;
         double get_prob_complement() const;
         // prob_event getIntersect(const prob_event &B) const;
@@ -24,6 +24,7 @@ class prob_event {
 
         bool operator < (const prob_event &other) const;
 
+        virtual ~prob_event() = default;
         //basically a comparator so std::set works in prob_space class
 };
 #endif
