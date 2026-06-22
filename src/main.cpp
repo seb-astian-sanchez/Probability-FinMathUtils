@@ -52,6 +52,16 @@ int main() {
 
     std::cout << "event " << test.get_name() << " has a " << test.get_prob() << " chance of happening"  << '\n' << '\n' ;
 
+    eventA.add_intersect("B", 0.2);
+
+    const auto& intersect_map = eventA.getIntersects();
+
+    const auto& BcapA = intersect_map.at("B");
+
+    std::cout << "event B intersect A has a " << BcapA << " chance of happening"  << '\n' << '\n' ;
+    
+
+
 
     return 0;
 }

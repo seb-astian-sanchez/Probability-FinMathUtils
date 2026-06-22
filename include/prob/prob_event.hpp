@@ -16,6 +16,11 @@ class prob_event {
         prob_event(std::string name, double prob_occurs);
         std::string get_name() const;
         double get_prob() const;
+        double get_prob_complement() const;
+        // prob_event getIntersect(const prob_event &B) const;
+        void add_intersect(std::string event_name, double prob);   
+        
+        const std::unordered_map<std::string, double>& getIntersects() const;
 
         bool operator < (const prob_event &other) const;
 
