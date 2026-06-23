@@ -55,3 +55,7 @@ double solve_prob::cup_via_cap(const prob_event &eventA, const prob_event &event
     }
     return -1;
 };
+
+// double solve_prob::AgivenB(const prob_event &A, const prob_event &B) const{
+
+// };

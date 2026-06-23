@@ -4,6 +4,7 @@
 #define PROB_SPACE_HPP
 
 #include <string>
+#include <vector>
 #include <unordered_map>
 #include "prob/prob_event.hpp"
 
@@ -17,6 +18,7 @@ class prob_space{
         prob_space();
         void add_event(std::string event_name, double prob);
         const std::unordered_map<std::string, prob_event>& getTest() const;
+        double mu_discrete(std::vector<std::vector<double>> table); 
         
 };
 

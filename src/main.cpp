@@ -45,7 +45,7 @@ int main() {
 
     // std::cout << "event " << eventA.get_name() << " has a " << eventA.get_prob() << " chance of happening"  << '\n' << '\n' ;
 
-    // prob_space spaceS{};
+    prob_space spaceS{};
 
     // spaceS.add_event("B", 0.2);
 
@@ -85,5 +85,8 @@ int main() {
 
     std::cout << "The union of A and B is " << p.cup_via_cap(eventA, eventB) << ", for your consideration." << '\n' << '\n';
 
+    std::vector<std::vector<double>> vec1 = {{1.0/7.0, 2.0/7.0, 4.0/7.0},{10,5,25}};
+
+    std:: cout << "The expected value is " << spaceS.mu_discrete(vec1) << ", you are very welcome." << '\n' << '\n';
     return 0;
 }
