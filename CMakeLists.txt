@@ -13,7 +13,7 @@ add_executable(Probability-FinMathUtils
     src/annuities.cpp
     src/prob_event.cpp
     src/prob_space.cpp
-    src/set_operations.cpp
+    src/solve_prob.cpp
     src/atomic_event.cpp
 )
 target_include_directories(Probability-FinMathUtils PRIVATE

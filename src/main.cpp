@@ -6,6 +6,7 @@
 #include "finmath/annuities.hpp"
 #include "prob/prob_space.hpp"
 #include "prob/prob_event.hpp"
+#include "prob/solve_prob.hpp"
 #include "prob/atomic_event.hpp"
 
 
@@ -63,16 +64,26 @@ int main() {
     // std::cout << "event B intersect A has a " << BcapA << " chance of happening"  << '\n' << '\n' ;
         
     
+    // prob_event eventA("A", 0.1);
+    // atomic_event eventB("B", 0.3);
+
+    // std::cout << eventA.get_name() << "\n";
+    // std::cout << eventB.get_name() << "\n";
+    // std::cout << eventA.get_prob() << "\n";
+    // std::cout << eventB.get_prob() << "\n";
+
+    // prob_event* ptr = &eventB;
+    // std::cout << ptr->get_name() << "\n";
+
     prob_event eventA("A", 0.1);
-    atomic_event eventB("B", 0.3);
+    prob_event eventB("B", 0.3);
 
-    std::cout << eventA.get_name() << "\n";
-    std::cout << eventB.get_name() << "\n";
-    std::cout << eventA.get_prob() << "\n";
-    std::cout << eventB.get_prob() << "\n";
+    solve_prob p{};
 
-    prob_event* ptr = &eventB;
-    std::cout << ptr->get_name() << "\n";
+    p.add_intersect(eventA, eventB, 0.03);
+
+
+    std::cout << "The union of A and B is " << p.cup_via_cap(eventA, eventB) << ", for your consideration." << '\n' << '\n';
 
     return 0;
 }
